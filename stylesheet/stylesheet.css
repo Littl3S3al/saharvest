@@ -1,0 +1,441 @@
+body{
+    padding: 0;
+    margin:0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'arialregular', sans-serif;
+    font-size: 1em;
+}
+
+/*--------------------------------------------------FONTS*/
+@font-face {
+    font-family: 'frankfurterregular';
+    src: url('../fonts/frankfurter_plain-webfont.woff2') format('woff2'),
+         url('../fonts/frankfurter_plain-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'arial_blackregular';
+    src: url('../fonts/arial_black-webfont.woff2') format('woff2'),
+         url('../fonts/arial_black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'arialbold';
+    src: url('../fonts/arial_bold-webfont.woff2') format('woff2'),
+         url('../fonts/arial_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'arialregular';
+    src: url('../fonts/arial-webfont.woff2') format('woff2'),
+         url('../fonts/arial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    font-family: 'frankfurterregular';
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+h2{
+    font-family: 'frankfurterregular';
+    font-size: 1em;
+    text-transform: uppercase;
+}
+h3{
+    font-family: 'arialbold';
+    font-size: 1.2em;
+}
+h4{
+    font-family: 'frankfurterregular';
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+a{
+    color: black;
+    transition-duration: 0.5s
+}
+a:hover{
+    text-decoration: none;
+    color: #ffe400;
+    transition-duration: 0.5s
+}
+.inTextLink{
+    font-family: 'arialbold';
+    text-decoration: underline;
+}
+hr{
+    border-color: white;
+    border-width: 0.4pt;
+}
+.black{
+    border-color: black;
+    border-width: 1pt;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+ul { padding-left:20px; list-style:none; }
+ul.sub-bullet{
+    list-style-position: inside;
+    padding-left:40px;
+}
+.fa-li.sub-bullet{
+    left: 1em;
+}
+
+/*--------------------------------------------------NAV BAR*/
+.navbar{
+    padding: 0 2%;
+    background-color: white;
+    font-family: 'frankfurterregular';
+    font-size: 1em;
+    text-align: center;
+}
+.navbar-toggler-icon{
+    color: #ffe400;
+}
+nav .navbar-nav li.active a{
+    color: #ffe400!important;
+}
+nav .navbar-nav li a{
+    color: black!important; 
+    transition-duration: 0.5s;
+}
+nav .navbar-nav li a:hover{
+    color: #ffe400!important;
+    transition-duration: 0.5s;
+}
+.fa-bars{
+    color: #ffe400
+}
+.navbar-toggler{
+    background-color: black;
+}
+.navPadding{
+    margin-bottom: 20px;
+}
+
+/*--------------------------------------------------ICONS*/
+.bigIcon{
+    font-size: 2rem;
+    padding: 10px 40px;
+    border-radius: 50px;
+    background: black;
+}
+.bigIcon:hover{
+    background: #ffe400;
+    color: black;
+    transition: 0.5s;
+}
+
+
+/*--------------------------------------------------BUTTONS*/
+.btn-yellow {
+    background: #ffe400;
+    color: black;
+    border-radius: 100px;
+    font-size: 1em;   
+}
+.btn-yellow:hover,
+.btn-yellow:active,
+.btn-yellow:focus,
+.btn-yellow.active {
+    background: black;
+    color: #ffe400;
+}
+
+/*--------------------------------------------------COLOURS*/
+.yellow{
+    background-color: #ffe400;
+}
+.black{
+    background-color: black;
+}
+.yellow-text{
+    color: #ffe400;
+}
+.whiteText{
+    color: white;
+}
+
+/*--------------------------------------------------CONTENT*/
+.imageBg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+/*--------------------------------------------------HERO IMAGE*/
+.heroImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("../images/heroImage.jpg");
+    height: 100vh;
+  }
+  .heroText{
+      color: white;
+      margin-top: 50vh;
+  }
+  .heroTextHeart{
+      font-size: 0.9em;
+  }
+/*--------------------------------------------------HERO ABOUT*/
+  .heroImageAbout {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("../images/heroAbout.jpg");
+    height: 70vh;
+  }
+  .heroAboutText{
+      margin-top: 30vh;
+  }
+
+/*--------------------------------------------------HERO OUR WORLD*/
+  .heroImageWhat {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("../images/heroWhat.jpg");
+    height: 70vh;
+  }
+
+/*--------------------------------------------------HERO NEWS*/
+.heroImageNews {
+background-image: url("../images/news.jpg");
+height: 70vh;
+}
+
+/*--------------------------------------------------HERO CONTACT*/
+  .heroImageContact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("../images/saharvest_truck.jpg");
+    height: 70vh;
+  }
+  .contactImage{
+      width: 90%;
+  }
+
+/*--------------------------------------------------NEWS PAGE*/
+.article:hover{
+    cursor: pointer;
+}
+.articleImg{
+    max-height: 400px;
+    overflow: hidden;
+}
+.articleContent{
+    border: 1px solid grey;
+}
+
+/*--------------------------------------------------ARTICLES PAGES*/
+.newsArticle{
+    margin-top: 10%;
+}
+.headline{
+    border-bottom: 1px solid black;
+}
+.content{
+    border-bottom: 1px solid black;
+}
+.share{
+    width: 100%;
+    text-align: center;
+}
+.shareIcon{
+    font-size: 2rem;
+}
+
+
+
+
+
+/*--------------------------------------------------GIVE A LITTLE LOVE*/
+.donate{
+    padding-top:20vh;
+}
+.donateContainer{
+    display: flex;
+}
+.donateSection{
+    border-radius: 50px;
+    flex: 1;
+}
+
+.popup{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+.popUpText{
+    border-radius: 20px;
+    margin-top: 15%;
+}
+.popupLink:hover{
+    color: black;
+    font-weight: bold;
+}
+
+.whatPopup{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+ 
+}
+.whatPopUpText{
+    border-radius: 20px;
+    margin-top: 15%;
+}
+.whatPopupLink:hover{
+    color: black;
+    font-weight: bold;
+}
+
+
+.fa-times-circle:hover{
+    cursor: pointer;
+}
+.alan:hover{
+    cursor: pointer;
+}
+
+/*--------------------------------------------------CONTACT US*/
+.contactWrapper{
+    display: flex;
+}
+.contactInfo{
+    flex: 1;
+    border-radius: 50px;
+}
+
+
+/*--------------------------------------------------BREAD CRUMBS*/
+.breadcrumb{
+    background-color: rgba(0, 0, 0, 0);
+}
+.breadcrumb a{
+    color: white!important;
+}
+.breadcrumb-item{
+    color: #ffe400!important;
+}
+
+/*--------------------------------------------------INFOGRAPHIC*/
+.infographicOne{
+    width: 90%;
+}
+/*--------------------------------------------------CONNECT WITH US*/
+.cicleIcon{
+   width: 80px;
+   height: 80px;
+   padding-top: 15px;
+   margin: 20px;
+   border-radius: 50%;
+   background-color: #ffe400;
+   display: inline-block;
+   transition-duration: 0.5s;
+}
+.cicleIcon:hover{
+    color: #ffe400;
+    background-color: white;
+    transition-duration: 0.5s;
+ }
+ 
+/*--------------------------------------------------info tabs*/
+nav > .nav.nav-tabs{
+    border: none;
+    color:black;
+    border-radius:0;
+  
+  }
+  nav > div a.nav-item.nav-link
+  {
+    border: none;
+    color:black;
+    font-family: 'frankfurterregular';
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  nav > div a.nav-item.nav-link.active{
+      background: #ffe400;
+  }
+  
+  nav > div a.nav-item.nav-link.active:after
+   {
+    content: "";
+    position: relative;
+    bottom: -60px;
+    left: -10%;
+  }
+  
+  nav > div a.nav-item.nav-link:hover,
+  nav > div a.nav-item.nav-link:focus
+  {
+    border: none;
+    background: #ffe400;
+    color:#fff;
+    transition:background 0.20s linear;
+  }
+
+ /*--------------------------------------------------FOOTER*/
+.footer{
+    font-size: 0.8em;
+    color: #4d4d4d;
+}
+
+
+
+
+
+
+/*--------------------------------------------------TABLETS*/
+@media only screen and (min-width: 768px) {
+    /* For tablets: */
+    h1{
+        font-size: 3em;
+    }
+    h2{
+        font-size: 2em;
+    }
+    .navbar{
+        font-size: 1.5em;
+    }
+    .cicleIcon{
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
+/*--------------------------------------------------DESKTOP*/
+@media only screen and (min-width: 992px) {
+    /* For desktop: */
+    h1{
+      font-size: 4em;  
+    }
+    .navPadding{
+        margin-bottom: 0;
+    }
+
+    /*--------------------------------------------------ICONS*/
+    .bigIcon{
+        font-size: 1.5rem;
+        padding: 10px 15px;
+        border-radius: 50px;
+        background: black;
+    }
+    .bigIcon:hover{
+        background: #ffe400;
+        color: black;
+        transition: 0.5s;
+    }
+}
+
