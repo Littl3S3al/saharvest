@@ -221,13 +221,22 @@ height: 70vh;
 /*--------------------------------------------------NEWS PAGE*/
 .article:hover{
     cursor: pointer;
+    background: #ffe400;
+}
+.article{
+    border: 1px solid grey;
+    border-radius: 5px;
 }
 .articleImg{
-    max-height: 400px;
     overflow: hidden;
 }
-.articleContent{
-    border: 1px solid grey;
+.articleImg img{
+    width: 100%;
+}
+button{
+    border: none;
+    border-radius: 50px; 
+    padding: 20px 50px 10px 50px;
 }
 
 /*--------------------------------------------------ARTICLES PAGES*/
@@ -411,6 +420,9 @@ nav > .nav.nav-tabs{
     .cicleIcon{
         width: 100px;
         height: 100px;
+    }
+    .article{
+        margin: 50px!important;
     }
 
 }
