@@ -97,6 +97,7 @@ ul.sub-bullet{
     font-family: 'frankfurterregular';
     font-size: 1em;
     text-align: center;
+    z-index: 100;
 }
 .navbar-toggler-icon{
     color: #ffe400;
@@ -400,7 +401,35 @@ nav > .nav.nav-tabs{
     color: #4d4d4d;
 }
 
-
+/* --------------------------------------------------COVID MAILER */
+.covidMailer{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    overflow-y: scroll;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+.covidContent{
+    border-radius: 5px;
+}
+.covidContent i{
+    color: #ffe400;
+    font-size: 3em;
+    margin: 5px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.covidContent i:hover{
+    cursor: pointer;
+    color: white;
+}
+.covidContent img{
+    max-width: 100%;
+}
 
 
 

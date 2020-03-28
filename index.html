@@ -123,6 +123,15 @@
     </div>
 
 
+    <div class="covidMailer pt-3 container-fluid" data-aos="fade-in">
+        <div class="covidContent text-center m-3" data-aos="fade-up">
+            <i class="fas fa-window-close"></i>
+            <br><br><br>
+            <h1 class="text-white">urgent notice</h1>
+            <img src="images/MAILERNEWSAHarvest.jpg" alt="urgent mailer about covid19">
+        </div>
+    </div>
+
     <script>
     document.querySelector('.mail').onclick = function () {
          window.open('mailto: alan@saharvest.org');return false
@@ -130,6 +139,17 @@
     document.querySelector('.phone').onclick = function () {
          window.open('tel:+27745662959');return false
     };
+
+    const covidMailer = document.querySelector('.covidMailer');
+    const x = document.querySelector('.covidContent i');
+
+    setTimeout(() => {
+        covidMailer.style.opacity = 1;
+    }, 1500);
+
+    x.addEventListener('click', () => {
+        covidMailer.classList.add('d-none');
+    })
     </script>
 
     <!-- Optional JavaScript -->
