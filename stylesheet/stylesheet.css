@@ -409,7 +409,6 @@ nav > .nav.nav-tabs{
     top: 0;
     z-index: 200;
     overflow-y: scroll;
-    opacity: 0;
     background: rgba(0, 0, 0, 0.7);
 }
 .covidContent{

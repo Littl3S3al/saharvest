@@ -69,6 +69,9 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="https://www.instagram.com/saharvest/" target="_blank"><i class="bigIcon fab fa-instagram"></i></a>
                 </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://twitter.com/saharvest1" target="_blank"><i class="bigIcon fa fa-twitter"></i></a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -101,12 +104,17 @@
                 <div class="col-lg-12 text-center" data-aos="fade-up">
                     <h1 class="yellow-text">CONNECT WITH US</h1>
                 </div>
-                <div class="col-md-4"></div>
-                <div class="col-md-2 text-center" data-aos="fade-up">
+                <div class="col-md-2 offset-md-2 text-center" data-aos="fade-up">
                     <div class="cicleIcon mail"><h1><i class="fas fa-envelope"></i></h1></div>
                 </div>
                 <div class="col-md-2 text-center" data-aos="fade-up">
                     <div class="cicleIcon phone"><h1><i class="fas fa-phone"></i></h1></div>
+                </div>
+                <div class="col-md-2 text-center" data-aos="fade-up">
+                    <div class="cicleIcon facebook"><h1><i class="fa fa-facebook"></i></h1></div>
+                </div>
+                <div class="col-md-2 text-center" data-aos="fade-up">
+                    <div class="cicleIcon twitter"><h1><i class="fa fa-twitter"></i></h1></div>
                 </div>
         </div>
     </div>
@@ -116,15 +124,15 @@
         <div class="row">
             <div class="col-lg-12 text-left footer p-5">
                 SA HARVEST 2019. ALL RIGHTS RESERVED
-                <br>EMAIL <a href="mailto: alan@saharvest.org" target="_blank">alan@saharvest.org</a> | PHONE <a href="tel:+27745662959">+27 74 566 2959</a>
+                <br>EMAIL <a href="mailto:carab@saharvest.org" target="_blank">carab@saharvest.org</a> | PHONE <a href="tel:+ 27724860618">+ 27 72 486 0618</a>
                 <br>SAHARVEST NPC 2016/326676/08  
             </div>
         </div>
     </div>
 
 
-    <div class="covidMailer pt-3 container-fluid" data-aos="fade-in">
-        <div class="covidContent text-center m-3" data-aos="fade-up">
+    <div class="covidMailer pt-3 container-fluid animated bounceIn d-none">
+        <div class="covidContent text-center m-3">
             <i class="fas fa-window-close"></i>
             <br><br><br>
             <h1 class="text-white">urgent notice</h1>
@@ -133,19 +141,12 @@
     </div>
 
     <script>
-    document.querySelector('.mail').onclick = function () {
-         window.open('mailto: alan@saharvest.org');return false
-    };
-    document.querySelector('.phone').onclick = function () {
-         window.open('tel:+27745662959');return false
-    };
-
     const covidMailer = document.querySelector('.covidMailer');
     const x = document.querySelector('.covidContent i');
 
     setTimeout(() => {
-        covidMailer.style.opacity = 1;
-    }, 1500);
+        covidMailer.classList.remove('d-none')
+    }, 2000);
 
     x.addEventListener('click', () => {
         covidMailer.classList.add('d-none');
