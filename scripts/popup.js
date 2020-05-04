@@ -24,7 +24,7 @@ popup.addEventListener('click', () => {
 });
 
 
-document.querySelector('.popupCopy').innerHTML = "<h3>Contact OUR TEAM here: + 27 72 486 0618<br><br>Or send us an email at <a href='mailto:carab@saharvest.org' class='popupLink'>carab@saharvest.org</a></h3>";
+document.querySelector('.popupCopy').innerHTML = "<h3>Contact OUR TEAM here: + 27 72 486 0618<br><br>Or send us an email at <a href='mailto:suzie@saharvest.org' class='popupLink'>suzie@saharvest.org</a></h3>";
 
 
 
