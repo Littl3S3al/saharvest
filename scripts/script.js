@@ -1,7 +1,7 @@
 AOS.init();
 
 document.querySelector('.mail').onclick = function () {
-    window.open('mailto:suzie@saharvest.org');return false
+    window.open('mailto:shellyd@saharvest.org');return false
 };
 document.querySelector('.phone').onclick = function () {
     window.open('tel:+27724860618');return false
